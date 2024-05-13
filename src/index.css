@@ -1,11 +1,12 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  font-size: 16px;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #000;
+  background-color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,6 +24,7 @@ a {
 body {
   font-family: sans-serif;
   line-height: 1.5;
+  margin: 0 auto;
 }
 
 h1,
@@ -39,9 +41,34 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+table {
+  margin-top: 30px;
+  width: 450px;
+  border-collapse: collapse;
+}
+thead {
+  background-color: #000;
+  color: #fff;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+td {
+  text-transform: capitalize;
+}
+
+tr:nth-child(2n) {
+  background-color: #d6d5d5;
 }
